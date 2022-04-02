@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tutorialbasics"
+    android:versionCode="1"
+    android:versionName="1.0">
+    <!--  android:installLocation="preferExternal"-->
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait"
+        >
+        <activity
+            android:name="com.example.tutorialbasics.MyMain"
+            android:label="@string/app_name"
+           	android:windowActionBarOverlay="true" 
+    		>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Container_activity"
+            android:label="@string/app_name"
+            android:windowActionBarOverlay="true"
+    		android:parentActivityName="com.example.tutorialbasics.MyMain"
+             >
+         </activity>
+       <activity
+            android:name=".CountDown_fragment"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.tutorialbasics.MyMain" 
+            >
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tutorialbasics.MyMain" />
+            <intent-filter>
+                <action android:name="com.example.tutorialbasics.CountDown_fragment" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Ghosting_fragment"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.tutorialbasics.MyMain">
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tutorialbasics.MyMain" />
+            <intent-filter>
+                <action android:name="com.example.tutorialbasics.Ghosting_fragment" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CornerTimes"
+            android:label="@string/app_name"
+            
+            android:parentActivityName="com.example.tutorialbasics.MyMain" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tutorialbasics.MyMain" />
+            <intent-filter>
+                <action android:name="com.example.tutorialbasics.CornerTimes" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/app_name"
+           
+            android:parentActivityName="com.example.tutorialbasics.MyMain" >
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tutorialbasics.MyMain" />
+            <intent-filter>
+                <action android:name="com.example.tutorialbasics.Settings" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Textwatcher"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.tutorialbasics.MyMain" >
+       </activity>
+       <activity
+            android:name="com.example.tutorialbasics.Focus"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.tutorialbasics.MyMain" >
+       </activity>
+       
+       </application>
+
+</manifest>
