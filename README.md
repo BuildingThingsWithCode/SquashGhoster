@@ -1,5 +1,5 @@
 # SquashGhoster
-This was a hobby project. An Android app to help with the training of squash specific movement patterns. 
+This is an old hobby project. An Android app to help with the training of squash specific movement patterns. 
 This kind of training is called ghosting.
 The app is functional and I use it in my training but it is not completely finished.
 Some parts of the source code are not published here to prevent copying of the app by others.
