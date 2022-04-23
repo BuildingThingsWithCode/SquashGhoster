@@ -1,7 +1,7 @@
 # SquashGhoster
-This is a hobby project. An Android app to help with the training of squash specific movement patterns.    
-The app is functional, but needs some minor tweaks to be finished.   
-Some parts of the source code are not published to prevent copying of the app.
+This was a hobby project. An Android app to help with the training of squash specific movement patterns.    
+The app is functional and I use it in my training but it is not completely finished.
+Some parts of the source code are not published here to prevent copying of the app by others.
 
 [Have a look (Youtube)](https://youtu.be/PJBVvsF23bs).
 
